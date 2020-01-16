@@ -19,7 +19,7 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters){
       if(req.body.queryResult.parameters.echoText){
         speech = req.body.queryResult.parameters.echoText;
-      }else if(req.body.queryResult.parameters.TeamMembers){
+      }else if(req.body.queryResult.parameters.teamName){
         speech = "Tilak, Pradeep K, Suman, Sentil, Kiran, Sreekumar"
       }
   } 
@@ -221,3 +221,7 @@ restService.post("/echo", function(req, res) {
 restService.listen(process.env.PORT || 8000, function() {
   console.log("Server up and listening");
 });
+
+
+
+//curl -X POST -H ': ' -H 'Content-Type: application/json' -d '{"responseId":"a8f0b5a8-3550-4672-8d14-fd6368fe79ea-f0f37969","queryResult":{"queryText":"Who is available from sre team?","parameters":{"teamName":"sre","echoText":""},"allRequiredParamsPresent":true,"fulfillmentMessages":[{"text":{"text":[""]}}],"outputContexts":[{"name":"projects/newagent-igtdtl/agent/sessions/ce5bcd6b-7822-6d2a-586a-50047b7eebd5/contexts/__system_counters__","parameters":{"no-input":0,"no-match":0,"teamName":"sre","teamName.original":"sre","echoText":"","echoText.original":""}}],"intent":{"name":"projects/newagent-igtdtl/agent/intents/6df5e7bd-9408-4ecc-97e9-a35878d06941","displayName":"sashu"},"intentDetectionConfidence":0.85714287,"languageCode":"en"},"originalDetectIntentRequest":{"payload":{}},"session":"projects/newagent-igtdtl/agent/sessions/ce5bcd6b-7822-6d2a-586a-50047b7eebd5"}' https://chatbot-serverapp.herokuapp.com/echo
