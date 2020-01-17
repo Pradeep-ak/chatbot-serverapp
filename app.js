@@ -19,8 +19,12 @@ restService.post("/echo", function(req, res) {
     req.body.queryResult.parameters){
       if(req.body.queryResult.parameters.echoText){
         speech = req.body.queryResult.parameters.echoText;
-      }else if(req.body.queryResult.parameters.teamName){
+      } else if(req.body.queryResult.parameters.teamName){
         speech = "Tilak, Pradeep K, Suman, Sentil, Kiran, Sreekumar"
+      } else if(req.body.queryResult.parameters.trendPrama){
+        speech = 'the '+trendPrama+ 'is normal.'
+      } else if(req.body.queryResult.parameters.count){
+        speech = 'the '+count+ 'for this hour is normal.'
       }
   } 
   
