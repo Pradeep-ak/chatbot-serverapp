@@ -22,9 +22,9 @@ restService.post("/echo", function(req, res) {
       } else if(req.body.queryResult.parameters.teamName){
         speech = "Tilak, Pradeep K, Suman, Sentil, Kiran, Sreekumar"
       } else if(req.body.queryResult.parameters.trendPrama){
-        speech = 'the '+trendPrama+ 'is normal.'
+        speech = 'the '+req.body.queryResult.parameters.trendPrama+ 'is normal.'
       } else if(req.body.queryResult.parameters.count){
-        speech = 'the '+count+ 'for this hour is normal.'
+        speech = 'the '+req.body.queryResult.parameters.count+ 'for this hour is normal.'
       }
   } 
   
