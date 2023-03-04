@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "SRE ChatBot",
+  "description": "This extension is a SRE Chatbot for JCPenney - Created by SRE Team",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "sre.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab",
+   "webRequest",
+   "webRequestBlocking",
+   "contentSettings",
+   "cookies",
+   "*://*/*"
+   ],
+   "content_scripts": [{
+    "js": ["jquery-3.3.1.js", "popup.js","autocomplete.js"],
+    "matches": ["http://*/*", "https://*/*"],
+    "run_at": "document_end"
+  }],
+  "content_security_policy":"script-src 'self' http://127.0.0.1:5000; object-src 'self'"
+}

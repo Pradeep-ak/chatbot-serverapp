@@ -1,0 +1,144 @@
+body {
+    min-width: 600px; /* your desired width */
+    max-width: 600px;
+    position: relative;
+    vertical-align:middle;
+    min-height: 500px;
+    max-height: 100%;
+    border: 1px black solid;
+    border-bottom: 0px;
+    margin: 0px;
+    padding: 2px 2px 2px 2px;
+  }
+  .question {
+      height: 100%;
+      width: 78%;
+  }
+  .submitButton {
+    height: 100%;
+    width: 19%;
+}
+.formSection{
+    width: 100%;
+    vertical-align: bottom;
+}
+.chatsection {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    border: 1px black;
+    overflow: auto;
+}
+.meChat {
+    width: 100%; 
+    max-width: 100%;
+    text-align: left;
+    background-color:#f0ebeb;
+    word-wrap: break-word;
+    margin-bottom: 2px;
+}
+.meChat label{
+  color: black;
+  font-style: italic;
+}
+.youChat {
+    min-width: 100%; 
+    max-width: 100%;
+    text-align: left;
+    background-color:#eafaea;
+    word-wrap: break-word;
+    margin-bottom: 2px; 
+}
+.youChat label{
+  color: black;
+  font-style: italic;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border-bottom: 1px black solid;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+.toggle{
+  text-align:left;
+}
+.statusBar{
+  width: 100%;
+  text-align: right;
+}
+.loginForm{
+  text-align: center;
+}
+.accWindow{
+  width: 100%;
+  height: 100%;
+}
+.loginSec{
+  width: 80%;
+  height: 100%;
+  margin-top: 25%;
+  margin-left: 10%;
+}
+
+
+
+
+
+
+* { box-sizing: border-box; }
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  /* font-size: 16px; */
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=password] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+input[type=button] {
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9; 
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}

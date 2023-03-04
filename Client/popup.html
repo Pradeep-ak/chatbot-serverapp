@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SRE Chat Bot</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="jquery-3.3.1.js"></script>
+    <script src="popup.js"></script>
+    <script src="autocomplete.js"></script>
+  </head>
+  <body>
+      <div class="statusBar">
+          <a href="#" class="toggle" id="toggle">toggle</a>
+      </div>
+      <div id="chatWindow" style="display: block;">
+          <div class="header">
+              <h1>Welcome..!! Ask to SRE Team.</h1>
+            </div>
+            <div class="chatsection" id="chatsection">
+              <div class="meChat"><label><b>Me: </b></label><span><i>Who are you ?</i></span></div>
+              <div class="youChat"><label><b>SRE Team: </b></label><span>SRE Chatbot, <i>Powered by - <b>JCP Ecom SRE Team</b></i></span></div>
+            </div>
+            <div class="formSection">
+              <!--Make sure the form has the autocomplete function switched off:-->
+              <form autocomplete="off" action="#" id="faqForm" class="faqForm">
+                <div class="autocomplete" style="width:85%;">
+                  <input id="myInput" type="text" name="askMe" placeholder="Ask Here">
+                </div>
+                <input type="submit">
+              </form>
+            </div>
+      </div>
+      <div id="accWindow" style="display: none;" class="accWindow">
+          <div style="text-align: center; display: block;" id="loginSec" class="loginSec">
+            <div id="errorMsg"></div>
+            <form id="loginForm" action="#" class="loginForm">
+              <input type="text" id="username" placeholder="jcp-email"/>
+              <input type="password" id="password" placeholder="password"/>
+              <input type="submit" style="margin-top: 2px;">
+            </form>
+          </div>
+          <div style="text-align: center;display: none;" id="AccSec">
+              <input type="button" style="margin-top: 2px;" id="logout" value="Logout">
+          </div>
+      </div>
+  </body>
+</html>
